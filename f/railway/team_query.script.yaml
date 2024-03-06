@@ -1,0 +1,19 @@
+summary: Fetch team projects services environments details
+description: ''
+lock: ''
+kind: script
+schema:
+  $schema: 'https://json-schema.org/draft/2020-12/schema'
+  type: object
+  properties:
+    api:
+      type: object
+      description: ''
+      format: resource-graphql
+    team_id:
+      type: string
+      description: ''
+      default: null
+  required:
+    - api
+    - team_id

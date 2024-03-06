@@ -1,0 +1,5 @@
+description: ''
+value:
+  api_key: '$var:f/openai/token'
+  organization_id: ''
+resource_type: openai

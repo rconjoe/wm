@@ -1,0 +1,5 @@
+display_name: s3
+extra_perms:
+  u/root: true
+owners:
+  - u/root

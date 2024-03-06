@@ -1,0 +1,11 @@
+description: ''
+value:
+  accessKey: '$var:f/s3/bucket_access_id'
+  bucket: '$var:f/s3/bucket1'
+  endPoint: '$var:f/s3/bucket_url'
+  pathStyle: false
+  port: 443
+  region: auto
+  secretKey: '$var:f/s3/r2a_trog_host'
+  useSSL: true
+resource_type: s3

@@ -1,0 +1,5 @@
+description: ''
+value:
+  base_url: 'https://backboard.railway.app/graphql/v2'
+  bearer_token: '$var:f/railway/team_token'
+resource_type: graphql

@@ -1,0 +1,54 @@
+summary: ''
+description: ''
+value:
+  modules:
+    - id: a
+      value:
+        type: script
+        input_transforms:
+          api:
+            type: javascript
+            expr: flow_input.api
+          team_id:
+            type: javascript
+            expr: flow_input.team_id
+        path: f/railway/team_query
+        tag_override: null
+    - id: b
+      value:
+        type: rawscript
+        content: '!inline inline_script_0.inline_script.bun.ts'
+        input_transforms:
+          x:
+            type: static
+            value: ''
+        lock: |-
+          {
+            "dependencies": {}
+          }
+          //bun.lockb
+          <empty>
+        language: bun
+schema:
+  $schema: 'https://json-schema.org/draft/2020-12/schema'
+  type: object
+  order:
+    - api
+    - team_id
+  properties:
+    api:
+      type: object
+      description: ''
+      default: '$res:f/railway/team_graphql'
+      format: resource-graphql
+      properties: {}
+      required: []
+    team_id:
+      type: string
+      description: ''
+      default: 349df063-fbcb-464a-8856-5579dbc572c0
+      format: ''
+  required:
+    - api
+    - team_id
+ws_error_handler_muted: false

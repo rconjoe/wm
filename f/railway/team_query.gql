@@ -1,0 +1,52 @@
+query team($team_id: String!) {
+  team(id: $team_id) {
+    avatar
+    createdAt
+    name
+    updatedAt
+    projects {
+      edges {
+        node {
+          id
+          name
+          createdAt
+          deletedAt
+          deployments {
+            edges {
+              node {
+                id
+                canRedeploy
+                canRollback
+                createdAt
+                environmentId
+                projectId
+                serviceId
+                staticUrl
+                url
+                updatedAt
+                status
+                suggestAddServiceDomain
+              }
+            }
+          }
+          services {
+            edges {
+              node {
+                id
+                name
+              }
+            }
+          }
+          environments {
+            edges {
+              node {
+                id
+                name
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

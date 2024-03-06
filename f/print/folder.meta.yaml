@@ -1,0 +1,5 @@
+display_name: print
+extra_perms:
+  u/root: true
+owners:
+  - u/root
