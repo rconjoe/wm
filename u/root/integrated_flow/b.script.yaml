@@ -1,0 +1,20 @@
+summary: Extract team projects deployments details
+description: This script was edited in place of flow u/root/integrated_flow  by root.
+lock: |-
+  {
+    "dependencies": {}
+  }
+  //bun.lockb
+  <empty>
+kind: script
+schema:
+  $schema: 'https://json-schema.org/draft/2020-12/schema'
+  type: object
+  properties:
+    team:
+      type: object
+      description: ''
+      default: null
+      properties: {}
+  required:
+    - team

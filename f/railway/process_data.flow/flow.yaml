@@ -1,4 +1,4 @@
-summary: ''
+summary: process railway data
 description: ''
 value:
   modules:
@@ -15,20 +15,16 @@ value:
         path: f/railway/team_query
         tag_override: null
     - id: b
+      summary: Extract team projects deployments details
       value:
-        type: rawscript
-        content: '!inline inline_script_0.inline_script.bun.ts'
+        type: script
         input_transforms:
-          x:
+          team:
             type: static
-            value: ''
-        lock: |-
-          {
-            "dependencies": {}
-          }
-          //bun.lockb
-          <empty>
-        language: bun
+            value: null
+        hash: 331f5e16a4300155
+        path: u/root/integrated_flow/b
+        tag_override: null
 schema:
   $schema: 'https://json-schema.org/draft/2020-12/schema'
   type: object
